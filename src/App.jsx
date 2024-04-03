@@ -3,6 +3,8 @@ import Actor from './Actor';
 import './App.css'
 import Evant from './Evant';
 import Singer from './Singer';
+import Plyers from './plyer';
+import Users from './users';
 
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
   return (
     <>
       <h1>Vite + React</h1>
+      <Users></Users>
+      <Plyers></Plyers>
       <Evant></Evant>
       {
         singers.map(singer => <Singer singer={singer} key={singer.id}></Singer>)
